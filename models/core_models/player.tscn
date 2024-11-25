@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://cn1jaorb0qy7f"]
+
+[ext_resource type="PackedScene" uid="uid://xy8rvnjp22n5" path="res://models/core_models/character.glb" id="1_0pmgw"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_w8wpt"]
+radius = 0.45
+
+[node name="Player" type="CharacterBody3D"]
+
+[node name="Pivot" type="Node3D" parent="."]
+
+[node name="Character" parent="Pivot" instance=ExtResource("1_0pmgw")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Pivot/Character"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.887068, 0, 0.433412, 0.00593695)
+shape = SubResource("SphereShape3D_w8wpt")

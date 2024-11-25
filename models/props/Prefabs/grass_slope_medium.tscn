@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://4n5a775iu1ev"]
+
+[ext_resource type="PackedScene" uid="uid://c5vxnhiis2bno" path="res://models/props/block-grass-large-slope-steep-narrow.glb" id="1_ce2yo"]
+
+[node name="block-grass-large-slope-steep-narrow2" instance=ExtResource("1_ce2yo")]
+transform = Transform3D(2.22809, 0, 0, 0, 4.09657, 0, 0, 0, 4.8139, 0, 0, 0)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.786971)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" index="0"]
+transform = Transform3D(81.1477, 0, 0, 0, 37.6299, -99.2294, 0, 21.7256, 171.871, 0.0274315, 0.542221, -0.826293)
