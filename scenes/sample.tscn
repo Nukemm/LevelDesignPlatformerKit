@@ -1,4 +1,4 @@
-[gd_scene load_steps=103 format=3 uid="uid://e6jwbml72r4o"]
+[gd_scene load_steps=104 format=3 uid="uid://e6jwbml72r4o"]
 
 [ext_resource type="Environment" uid="uid://bqnqgflivjvue" path="res://scenes/main-environment.tres" id="1_apxki"]
 [ext_resource type="PackedScene" uid="uid://dl2ed4gkybggf" path="res://objects/player.tscn" id="2_hgw2l"]
@@ -97,6 +97,7 @@
 [ext_resource type="PackedScene" uid="uid://b1x1b3ehl6bh2" path="res://models/props/Prefabs/rocks.tscn" id="93_qk14t"]
 [ext_resource type="PackedScene" uid="uid://2rrwm6km2oji" path="res://models/props/Prefabs/ramp.tscn" id="94_fg4nf"]
 [ext_resource type="PackedScene" uid="uid://c7yvydie0gota" path="res://models/props/Prefabs/large_pine_collider2.tscn" id="96_pdhj3"]
+[ext_resource type="PackedScene" uid="uid://cnymdajj1vsqm" path="res://objects/platform.tscn" id="98_og6uy"]
 
 [sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_u8ojw"]
 auto_exposure_scale = 0.75
@@ -135,7 +136,7 @@ environment = ExtResource("1_apxki")
 camera_attributes = SubResource("CameraAttributesPractical_u8ojw")
 
 [node name="Player" parent="." node_paths=PackedStringArray("view") instance=ExtResource("2_hgw2l")]
-transform = Transform3D(0.00774935, 0, -0.99997, 0, 1, 0, 0.99997, 0, 0.00774935, 3.7357, 14.5285, 3.06283)
+transform = Transform3D(0.00774935, 0, -0.99997, 0, 1, 0, 0.99997, 0, 0.00774935, 3.7357, 2.33516, 46.3411)
 view = NodePath("../View")
 
 [node name="View" type="Node3D" parent="." node_paths=PackedStringArray("target") groups=["View"]]
@@ -189,7 +190,7 @@ transform = Transform3D(-0.989085, 0, 0.147343, 0, 1, 0, -0.147343, 0, -0.989085
 transform = Transform3D(-0.294924, 0, 0.955521, 0, 1, 0, -0.955521, 0, -0.294924, 0.406457, 0.754891, 75.0843)
 
 [node name="coin" parent="World" instance=ExtResource("20_lfsn4")]
-transform = Transform3D(0.599778, 0, -0.800166, 0, 1, 0, 0.800166, 0, 0.599778, -7.31089, 1.22279, 33.9158)
+transform = Transform3D(0.599778, 0, -0.800166, 0, 1, 0, 0.800166, 0, 0.599778, -7.31089, 1.80631, 33.9158)
 
 [node name="coin2" parent="World" instance=ExtResource("20_lfsn4")]
 transform = Transform3D(0.05319, 0, -0.998585, 0, 1, 0, 0.998585, 0, 0.05319, -5.88655, 22.2046, -13.7099)
@@ -5672,6 +5673,9 @@ transform = Transform3D(1, 0, 0, 0, 1.39935, 0, 0, 0, 1, -23.5466, 0.985043, 50.
 
 [node name="tree-pine86" parent="." instance=ExtResource("88_ovmiq")]
 transform = Transform3D(1, 0, 0, 0, 1.39935, 0, 0, 0, 1, -4.41499, 0.985043, 37.746)
+
+[node name="platform" parent="." instance=ExtResource("98_og6uy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.596002, 41.5355, -7.75529)
 
 [connection signal="coin_collected" from="Player" to="HUD" method="_on_coin_collected"]
 [connection signal="reached_goal" from="Player" to="HUD" method="_on_player_reached_goal"]
