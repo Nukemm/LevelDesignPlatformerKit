@@ -135,7 +135,7 @@ environment = ExtResource("1_apxki")
 camera_attributes = SubResource("CameraAttributesPractical_u8ojw")
 
 [node name="Player" parent="." node_paths=PackedStringArray("view") instance=ExtResource("2_hgw2l")]
-transform = Transform3D(0.00774935, 0, -0.99997, 0, 1, 0, 0.99997, 0, 0.00774935, 18.3532, 1.19707, 44.3837)
+transform = Transform3D(0.00774935, 0, -0.99997, 0, 1, 0, 0.99997, 0, 0.00774935, 3.7357, 14.5285, 3.06283)
 view = NodePath("../View")
 
 [node name="View" type="Node3D" parent="." node_paths=PackedStringArray("target") groups=["View"]]
@@ -198,7 +198,10 @@ transform = Transform3D(0.05319, 0, -0.998585, 0, 1, 0, 0.998585, 0, 0.05319, -5
 transform = Transform3D(0.05319, 0, -0.998585, 0, 1, 0, 0.998585, 0, 0.05319, 9.01201, 5.2157, -15.3617)
 
 [node name="coin4" parent="World" instance=ExtResource("20_lfsn4")]
-transform = Transform3D(0.999368, 0, 0.0355623, 0, 1, 0, -0.0355623, 0, 0.999368, 7.13414, 18.8286, -7.47195)
+transform = Transform3D(0.999368, 0, 0.0355623, 0, 1, 0, -0.0355623, 0, 0.999368, 7.13414, 20.2347, -7.47195)
+
+[node name="coin5" parent="World" instance=ExtResource("20_lfsn4")]
+transform = Transform3D(0.092301, 0, -0.995731, 0, 1, 0, 0.995731, 0, 0.092301, -0.915627, 13.899, 12.054)
 
 [node name="block-grass-overhang-narrow2" parent="World" instance=ExtResource("10_3fyq8")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 38.8397, 17.7123, -4.6896)
