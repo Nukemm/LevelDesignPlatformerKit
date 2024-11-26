@@ -1,4 +1,4 @@
-[gd_scene load_steps=95 format=3 uid="uid://e6jwbml72r4o"]
+[gd_scene load_steps=96 format=3 uid="uid://e6jwbml72r4o"]
 
 [ext_resource type="Environment" uid="uid://bqnqgflivjvue" path="res://scenes/main-environment.tres" id="1_apxki"]
 [ext_resource type="PackedScene" uid="uid://dl2ed4gkybggf" path="res://objects/player.tscn" id="2_hgw2l"]
@@ -89,6 +89,7 @@
 [ext_resource type="PackedScene" uid="uid://1876pqglxnsg" path="res://models/props/tree-pine-small.glb" id="87_xc6ye"]
 [ext_resource type="PackedScene" uid="uid://d2veqbfgvsag0" path="res://models/props/tree-pine.glb" id="88_ovmiq"]
 [ext_resource type="PackedScene" uid="uid://dlst3fxcqusuq" path="res://models/props/tree.glb" id="89_4gbvp"]
+[ext_resource type="PackedScene" uid="uid://bbd6cnsrksdi4" path="res://models/props/Prefabs/fence_straight_1.tscn" id="90_pgk72"]
 
 [sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_u8ojw"]
 auto_exposure_scale = 0.75
@@ -127,7 +128,7 @@ environment = ExtResource("1_apxki")
 camera_attributes = SubResource("CameraAttributesPractical_u8ojw")
 
 [node name="Player" parent="." node_paths=PackedStringArray("view") instance=ExtResource("2_hgw2l")]
-transform = Transform3D(0.925831, 0, 0.377938, 0, 1, 0, -0.377938, 0, 0.925831, -1.19132, 3.57682, 3.6812)
+transform = Transform3D(0.00774935, 0, -0.99997, 0, 1, 0, 0.99997, 0, 0.00774935, -1.19132, 0.996096, 52.2443)
 view = NodePath("../View")
 
 [node name="View" type="Node3D" parent="." node_paths=PackedStringArray("target") groups=["View"]]
@@ -568,7 +569,7 @@ transform = Transform3D(-0.0174524, 0, -0.999848, 0, 1, 0, 0.999848, 0, -0.01745
 transform = Transform3D(-0.0174524, 0, -0.999848, 0, 1, 0, 0.999848, 0, -0.0174524, -6.01032, 14.0245, 9.81014)
 
 [node name="fence-straight5" parent="." instance=ExtResource("68_qjap1")]
-transform = Transform3D(-0.0174524, 0, -0.999848, 0, 1, 0, 0.999848, 0, -0.0174524, -5.99266, 14.0245, 8.82737)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.99266, 14.0245, 8.82737)
 
 [node name="flag2" parent="." instance=ExtResource("69_px66d")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.27034, 14.0245, 7.93358)
@@ -638,6 +639,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.1692, 14.0245, 6.60335)
 
 [node name="tree2" parent="." instance=ExtResource("89_4gbvp")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.5637, 14.0245, 8.48428)
+
+[node name="fence-straight6" parent="." instance=ExtResource("90_pgk72")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -6, 14, 8)
 
 [connection signal="coin_collected" from="Player" to="HUD" method="_on_coin_collected"]
 [connection signal="reached_goal" from="Player" to="HUD" method="_on_player_reached_goal"]
