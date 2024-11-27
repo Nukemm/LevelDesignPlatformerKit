@@ -145,7 +145,7 @@ environment = ExtResource("1_6hwq3")
 camera_attributes = SubResource("CameraAttributesPractical_u8ojw")
 
 [node name="Player" parent="." node_paths=PackedStringArray("view") instance=ExtResource("2_udw38")]
-transform = Transform3D(0.00774935, 0, -0.99997, 0, 1, 0, 0.99997, 0, 0.00774935, 11.491, 4.54856, 44.479)
+transform = Transform3D(0.00774935, 0, -0.99997, 0, 1, 0, 0.99997, 0, 0.00774935, 9.33634, 1.61744, 41.0708)
 view = NodePath("../View")
 
 [node name="View" type="Node3D" parent="." node_paths=PackedStringArray("target") groups=["View"]]
@@ -484,7 +484,7 @@ vertical_alignment = 1
 
 [node name="button" parent="." node_paths=PackedStringArray("target") instance=ExtResource("58_4vhpy")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.557762, 42.019, -6.38267)
-target = NodePath("../moving_object_path")
+target = NodePath("../Node3D/moving_object_path")
 
 [node name="block-grass-overhang-low-large2" parent="." instance=ExtResource("59_i7xsy")]
 transform = Transform3D(3.48466, 0, 0, 0, 5.21089, 0, 0, 0, 10.9215, -0.493511, -1.62041, 26.4544)
@@ -5712,18 +5712,20 @@ transform = Transform3D(1, 0, 0, 0, 1.39935, 0, 0, 0, 1, -4.41499, 0.985043, 37.
 [node name="platform" parent="." instance=ExtResource("99_77x53")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.596002, 41.5355, -8.40556)
 
-[node name="moving_object_path" parent="." node_paths=PackedStringArray("object_to_move") instance=ExtResource("4_wj00v")]
-curve = SubResource("Curve3D_u8qph")
-object_to_move = NodePath("../platform")
-movement_speed = 2.0
-is_on_from_start = false
-ping_pong = true
-
 [node name="wall" parent="." instance=ExtResource("100_66r0f")]
 transform = Transform3D(1, 0, 0, 0, 2.06374, 0, 0, 0, 3.05691, 0.532169, 41.8397, -5.19018)
 
 [node name="wall2" parent="." instance=ExtResource("100_66r0f")]
 transform = Transform3D(1, 0, 0, 0, 2.06374, 0, 0, 0, 3.05691, -1.66676, 41.8397, -5.19018)
+
+[node name="Node3D" type="Node3D" parent="."]
+
+[node name="moving_object_path" parent="Node3D" node_paths=PackedStringArray("object_to_move") instance=ExtResource("4_wj00v")]
+curve = SubResource("Curve3D_u8qph")
+object_to_move = NodePath("../../platform")
+movement_speed = 2.0
+is_on_from_start = false
+ping_pong = true
 
 [connection signal="coin_collected" from="Player" to="HUD" method="_on_coin_collected"]
 [connection signal="reached_goal" from="Player" to="HUD" method="_on_player_reached_goal"]

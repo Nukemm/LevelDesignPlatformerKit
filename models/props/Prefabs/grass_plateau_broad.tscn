@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://1tbxqdsk0ugy"]
+[gd_scene load_steps=4 format=3 uid="uid://1tbxqdsk0ugy"]
 
 [ext_resource type="PackedScene" uid="uid://s1bbwujq22dg" path="res://models/props/block-grass-large-tall.glb" id="1_0p6fs"]
+[ext_resource type="Material" uid="uid://cf8ly3t0si1ne" path="res://models/props/Prefabs/Materials/new_standard_material_3d2.tres" id="2_pceir"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_ms7rd"]
 size = Vector3(2.00763, 2.70185, 1.97003)
@@ -9,6 +10,7 @@ size = Vector3(2.00763, 2.70185, 1.97003)
 
 [node name="block-grass-large-tall" parent="." index="0"]
 transform = Transform3D(1, 0, 0, 0, 3.30382, 0, 0, 0, 3.87523, 0, 0, 0)
+surface_material_override/0 = ExtResource("2_pceir")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="." index="1"]
 transform = Transform3D(1, 0, 0, 0, 3.30382, 0, 0, 0, 3.87523, 0, 0, 0)
