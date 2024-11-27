@@ -1,4 +1,4 @@
-[gd_scene load_steps=107 format=3 uid="uid://bfxxjpr02mmkl"]
+[gd_scene load_steps=108 format=3 uid="uid://bfxxjpr02mmkl"]
 
 [ext_resource type="Environment" uid="uid://bqnqgflivjvue" path="res://scenes/main-environment.tres" id="1_6hwq3"]
 [ext_resource type="PackedScene" uid="uid://dl2ed4gkybggf" path="res://objects/player.tscn" id="2_udw38"]
@@ -99,7 +99,8 @@
 [ext_resource type="PackedScene" uid="uid://b1x1b3ehl6bh2" path="res://models/props/Prefabs/rocks.tscn" id="97_lp26e"]
 [ext_resource type="PackedScene" uid="uid://c7yvydie0gota" path="res://models/props/Prefabs/large_pine_collider2.tscn" id="98_tguvw"]
 [ext_resource type="PackedScene" uid="uid://cnymdajj1vsqm" path="res://objects/platform.tscn" id="99_77x53"]
-[ext_resource type="PackedScene" uid="uid://dbr3dh46cbskt" path="res://objects/wall.tscn" id="100_66r0f"]
+[ext_resource type="PackedScene" uid="uid://joyaw3gpmp5u" path="res://models/props/Prefabs/hut_wall_collider.tscn" id="100_dhlyc"]
+[ext_resource type="PackedScene" uid="uid://cqtcet0j5lxdt" path="res://models/prototyping/models/pipe.glb" id="101_upmf1"]
 
 [sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_u8ojw"]
 auto_exposure_scale = 0.75
@@ -145,7 +146,7 @@ environment = ExtResource("1_6hwq3")
 camera_attributes = SubResource("CameraAttributesPractical_u8ojw")
 
 [node name="Player" parent="." node_paths=PackedStringArray("view") instance=ExtResource("2_udw38")]
-transform = Transform3D(0.00774935, 0, -0.99997, 0, 1, 0, 0.99997, 0, 0.00774935, -0.434814, 42.7555, -5.37069)
+transform = Transform3D(0.00774935, 0, -0.99997, 0, 1, 0, 0.99997, 0, 0.00774935, -4.59054, 1.78853, 16.5763)
 view = NodePath("../View")
 
 [node name="View" type="Node3D" parent="." node_paths=PackedStringArray("target") groups=["View"]]
@@ -563,6 +564,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.44637, 13.0354, 8.14578)
 
 [node name="block-grass-overhang-large3" parent="." instance=ExtResource("62_cgc6e")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.7038, 13.0245, 8.14578)
+
+[node name="block-grass-overhang-large4" parent="." instance=ExtResource("62_cgc6e")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.651764, -2.49435, -92.4215)
 
 [node name="block-grass-large-slope-steep2" parent="." instance=ExtResource("47_8q6uh")]
 transform = Transform3D(-4.37114e-08, 0, 3.51841, 0, 4.2856, 0, -1, 0, -1.53794e-07, -3.09738, 16.4452, -13.5159)
@@ -5719,11 +5723,32 @@ movement_speed = 3.0
 is_on_from_start = false
 ping_pong = true
 
-[node name="wall" parent="." instance=ExtResource("100_66r0f")]
-transform = Transform3D(1, 0, 0, 0, 2.06374, 0, 0, 0, 3.05691, 0.532169, 41.8397, -5.19018)
+[node name="platform-fortified4" parent="." instance=ExtResource("100_dhlyc")]
+transform = Transform3D(1.08856e-07, 2.06374, 4.61581e-07, 2.49034, -9.02089e-08, -8.47033e-22, 1.64368e-14, 3.11616e-07, -3.05691, 0.182623, 42.7803, -5.16265)
 
-[node name="wall2" parent="." instance=ExtResource("100_66r0f")]
-transform = Transform3D(1, 0, 0, 0, 2.06374, 0, 0, 0, 3.05691, -1.66676, 41.8397, -5.19018)
+[node name="platform-fortified6" parent="." instance=ExtResource("100_dhlyc")]
+transform = Transform3D(-2.49013, -0.0264732, 4.61581e-07, -0.0319454, 2.06357, 0, -3.75999e-07, -3.99734e-09, -3.05691, -0.549824, 43.6815, -5.16265)
+
+[node name="platform-fortified7" parent="." instance=ExtResource("100_dhlyc")]
+transform = Transform3D(-2.49013, -0.0264732, 4.61581e-07, -0.0319454, 2.06357, 0, -3.75999e-07, -3.99734e-09, -3.05691, -0.512639, 40.7829, -8.43679)
+
+[node name="platform-fortified5" parent="." instance=ExtResource("100_dhlyc")]
+transform = Transform3D(-1.08856e-07, -2.06374, 0, 2.49034, -9.02089e-08, 0, 0, 0, 3.05691, -1.3229, 42.7799, -5.19018)
+
+[node name="flag3" parent="." instance=ExtResource("72_2vp6y")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.232076, 44.116, -3.72541)
+
+[node name="pipe2" parent="." instance=ExtResource("101_upmf1")]
+transform = Transform3D(1, 0, 0, 0, -13.0975, 0, 0, 0, 1, 11.4459, 35.5792, -95.509)
+
+[node name="pipe3" parent="." instance=ExtResource("101_upmf1")]
+transform = Transform3D(1, 0, 0, 0, -13.0975, 0, 0, 0, 1, 11.4459, 22.5019, -95.509)
+
+[node name="pipe4" parent="." instance=ExtResource("101_upmf1")]
+transform = Transform3D(1, 0, 0, 0, -13.0975, 0, 0, 0, 1, 11.4459, 9.82263, -95.509)
+
+[node name="pipe5" parent="." instance=ExtResource("101_upmf1")]
+transform = Transform3D(1, 0, 0, 0, -13.0975, 0, 0, 0, 1, 11.4459, -1.638, -95.509)
 
 [connection signal="coin_collected" from="Player" to="HUD" method="_on_coin_collected"]
 [connection signal="reached_goal" from="Player" to="HUD" method="_on_player_reached_goal"]
