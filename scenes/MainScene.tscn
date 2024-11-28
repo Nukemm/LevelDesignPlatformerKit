@@ -507,7 +507,7 @@ vertical_alignment = 1
 
 [node name="button" parent="." node_paths=PackedStringArray("target") instance=ExtResource("58_4vhpy")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.557762, 42.019, -6.38267)
-target = NodePath("../moving_object_path")
+target = NodePath("")
 
 [node name="block-grass-overhang-low-large2" parent="." instance=ExtResource("59_i7xsy")]
 transform = Transform3D(3.48466, 0, 0, 0, 5.21089, 0, 0, 0, 10.9215, -0.493511, -1.62041, 26.4544)
@@ -5735,17 +5735,10 @@ transform = Transform3D(1, 0, 0, 0, 1.39935, 0, 0, 0, 1, -4.41499, 0.985043, 37.
 [node name="platform" parent="." instance=ExtResource("99_77x53")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.10403, 7.98086, -94.7147)
 
-[node name="moving_object_path" parent="." node_paths=PackedStringArray("object_to_move") instance=ExtResource("4_wj00v")]
-curve = SubResource("Curve3D_u8qph")
-object_to_move = NodePath("../platform")
-movement_speed = 3.0
-is_on_from_start = false
-ping_pong = true
-
 [node name="moving_object_path2" parent="." node_paths=PackedStringArray("object_to_move") instance=ExtResource("4_wj00v")]
 curve = SubResource("Curve3D_u8qph")
 object_to_move = NodePath("../platform")
-movement_speed = 3.0
+movement_speed = 2.0
 ping_pong = true
 
 [node name="platform-fortified7" parent="." instance=ExtResource("100_dhlyc")]
@@ -5766,7 +5759,7 @@ target = NodePath("../moving_object_path3")
 
 [node name="button3" parent="." node_paths=PackedStringArray("target") instance=ExtResource("58_4vhpy")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.90501, 42.019, -105.04)
-target = NodePath("../moving_object_path")
+target = NodePath("")
 
 [node name="platform-fortified8" parent="." instance=ExtResource("100_dhlyc")]
 transform = Transform3D(1.08856e-07, 2.06374, 4.61581e-07, 2.49034, -9.02089e-08, -8.47033e-22, 1.64368e-14, 3.11616e-07, -3.05691, 0.182623, 42.7803, -5.16265)
@@ -5825,7 +5818,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.011, 41.247, -5.098)
 [node name="moving_object_path3" parent="." node_paths=PackedStringArray("object_to_move") instance=ExtResource("4_wj00v")]
 curve = SubResource("Curve3D_t24jn")
 object_to_move = NodePath("../platform3")
-movement_speed = 3.0
+movement_speed = 4.0
 is_on_from_start = false
 
 [connection signal="coin_collected" from="Player" to="HUD" method="_on_coin_collected"]
