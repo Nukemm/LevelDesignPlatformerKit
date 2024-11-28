@@ -200,7 +200,7 @@ environment = ExtResource("1_6hwq3")
 camera_attributes = SubResource("CameraAttributesPractical_u8ojw")
 
 [node name="Player" parent="." node_paths=PackedStringArray("view") instance=ExtResource("2_udw38")]
-transform = Transform3D(0.00774935, 0, -0.99997, 0, 1, 0, 0.99997, 0, 0.00774935, 14.5934, 1.60713, 47.838)
+transform = Transform3D(0.00774935, 0, -0.99997, 0, 1, 0, 0.99997, 0, 0.00774935, 2.23411, 3.19305, 44.5673)
 view = NodePath("../View")
 
 [node name="View" type="Node3D" parent="." node_paths=PackedStringArray("target") groups=["View"]]
@@ -645,7 +645,7 @@ transform = Transform3D(-4.37114e-08, 0, 3.51841, 0, 4.2856, 0, -1, 0, -1.53794e
 transform = Transform3D(-0.0486186, -4.13282, 0.915202, 0.0113827, 1.11372, 3.39729, -0.998753, 0.213876, -0.00583279, 1.77915, 23.555, -13.1519)
 
 [node name="platform-falling" parent="." instance=ExtResource("63_vrsrw")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.18322, 31.5627, 0.703625)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.18322, 31.1665, 0.703625)
 
 [node name="platform-falling2" parent="." instance=ExtResource("63_vrsrw")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.2085, 31.5627, 3.70362)
@@ -5358,7 +5358,7 @@ transform = Transform3D(1, 0, 0, 0, 1.39935, 0, 0, 0, 1, 19.8788, 0.985039, 18.9
 transform = Transform3D(1, 0, 0, 0, 1.39935, 0, 0, 0, 1, 20.7064, 0.985039, 18.9123)
 
 [node name="tree-pine31" parent="." instance=ExtResource("91_84bq4")]
-transform = Transform3D(1, 0, 0, 0, 1.39935, 0, 0, 0, 1, -4.10573, 0.985043, 38.7978)
+transform = Transform3D(1, 0, 0, 0, 1.08473, 0, 0, 0, 1, -4.10573, 0.985043, 38.7978)
 
 [node name="tree-pine141" parent="." instance=ExtResource("91_84bq4")]
 transform = Transform3D(1, 0, 0, 0, 1.39935, 0, 0, 0, 1, -14.8405, 0.985043, 39.6454)
@@ -5781,7 +5781,7 @@ transform = Transform3D(1, 0, 0, 0, 1.39935, 0, 0, 0, 1, -23.5466, 0.985043, 50.
 transform = Transform3D(1, 0, 0, 0, 1.39935, 0, 0, 0, 1, -23.5466, 0.985043, 50.9432)
 
 [node name="tree-pine86" parent="." instance=ExtResource("91_84bq4")]
-transform = Transform3D(1, 0, 0, 0, 1.39935, 0, 0, 0, 1, -4.41499, 0.985043, 37.746)
+transform = Transform3D(1, 0, 0, 0, 1.15948, 0, 0, 0, 1, -4.41499, 0.985043, 37.746)
 
 [node name="platform" parent="." instance=ExtResource("99_77x53")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.10403, 7.98086, -94.7147)
@@ -6053,6 +6053,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.0854, 3.12218, -99.494)
 
 [node name="block-snow-low-narrow10" parent="." instance=ExtResource("146_dc84r")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.4281, 3.12218, -97.2913)
+
+[node name="heart3" parent="." instance=ExtResource("76_hfxhq")]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -0.536818, 41.1461, -8.65595)
 
 [connection signal="coin_collected" from="Player" to="HUD" method="_on_coin_collected"]
 [connection signal="reached_goal" from="Player" to="HUD" method="_on_player_reached_goal"]
