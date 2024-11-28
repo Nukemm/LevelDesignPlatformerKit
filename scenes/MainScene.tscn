@@ -1,4 +1,4 @@
-[gd_scene load_steps=113 format=3 uid="uid://bfxxjpr02mmkl"]
+[gd_scene load_steps=112 format=3 uid="uid://bfxxjpr02mmkl"]
 
 [ext_resource type="Environment" uid="uid://bqnqgflivjvue" path="res://scenes/main-environment.tres" id="1_6hwq3"]
 [ext_resource type="PackedScene" uid="uid://dl2ed4gkybggf" path="res://objects/player.tscn" id="2_udw38"]
@@ -50,9 +50,8 @@
 [ext_resource type="PackedScene" uid="uid://bv0vv2n67hfv1" path="res://models/props/Prefabs/grass_hill_collider.tscn" id="49_6mec5"]
 [ext_resource type="PackedScene" uid="uid://2rrwm6km2oji" path="res://models/props/Prefabs/ramp.tscn" id="50_wx36b"]
 [ext_resource type="PackedScene" uid="uid://ccpkq88clsvvn" path="res://models/props/Prefabs/grass_overhang_collider.tscn" id="51_cbc2i"]
-[ext_resource type="PackedScene" uid="uid://464njxe0ii0k" path="res://models/props/block-snow-large-tall.glb" id="52_p6e2l"]
 [ext_resource type="Script" path="res://scripts/hud.gd" id="52_rach2"]
-[ext_resource type="PackedScene" uid="uid://r0nqpjydks28" path="res://models/props/Prefabs/mountain_snow_core_short.tscn" id="53_4a43x"]
+[ext_resource type="PackedScene" uid="uid://dmppvxs8rjbtl" path="res://models/props/Prefabs/snow_mount_core.tscn" id="52_ywpj7"]
 [ext_resource type="Texture2D" uid="uid://cd7oyc56ehkx1" path="res://sprites/coin.png" id="53_hnq3v"]
 [ext_resource type="LabelSettings" uid="uid://daohhjonjrdx8" path="res://themes/label_settings.tres" id="54_txrmh"]
 [ext_resource type="FontFile" uid="uid://d0cxd77jybrcn" path="res://fonts/lilita_one_regular.ttf" id="55_qmrwh"]
@@ -157,7 +156,7 @@ environment = ExtResource("1_6hwq3")
 camera_attributes = SubResource("CameraAttributesPractical_u8ojw")
 
 [node name="Player" parent="." node_paths=PackedStringArray("view") instance=ExtResource("2_udw38")]
-transform = Transform3D(0.00774935, 0, -0.99997, 0, 1, 0, 0.99997, 0, 0.00774935, -0.493556, 42.3532, -4.6733)
+transform = Transform3D(0.00774935, 0, -0.99997, 0, 1, 0, 0.99997, 0, 0.00774935, 2.94614, 0.282223, -92.4215)
 view = NodePath("../View")
 
 [node name="View" type="Node3D" parent="." node_paths=PackedStringArray("target") groups=["View"]]
@@ -383,11 +382,11 @@ transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 7.3913
 [node name="block-grass-overhang-edge6" parent="World" instance=ExtResource("51_cbc2i")]
 transform = Transform3D(-1.08646, 0, -0.172078, 0, 1.1, 0, 0.172078, 0, -1.08646, 7.15203, 14.9264, -4.98841)
 
-[node name="block-snow-large-tall2" parent="World" instance=ExtResource("52_p6e2l")]
+[node name="block-snow-large-tall3" parent="World" instance=ExtResource("52_ywpj7")]
 transform = Transform3D(7.94113, 0, 0, 0, 19.5479, 0, 0, 0, 7.66442, 5.712, 9.53674e-07, -103.397)
 
-[node name="block-snow-large3" parent="World" instance=ExtResource("53_4a43x")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.712, -19.2036, -103.241)
+[node name="block-snow-large-tall4" parent="World" instance=ExtResource("52_ywpj7")]
+transform = Transform3D(7.94113, 0, 0, 0, 19.5479, 0, 0, 0, 7.66442, 5.712, -39.1671, -103.241)
 
 [node name="Sun" type="DirectionalLight3D" parent="."]
 transform = Transform3D(-0.422618, -0.694272, 0.582564, 0, 0.642788, 0.766044, -0.906308, 0.323744, -0.271654, 0, 61.6686, 12.5369)
@@ -505,9 +504,8 @@ label_settings = SubResource("LabelSettings_v6r7m")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="button" parent="." node_paths=PackedStringArray("target") instance=ExtResource("58_4vhpy")]
+[node name="button" parent="." instance=ExtResource("58_4vhpy")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.557762, 42.019, -6.38267)
-target = NodePath("")
 
 [node name="block-grass-overhang-low-large2" parent="." instance=ExtResource("59_i7xsy")]
 transform = Transform3D(3.48466, 0, 0, 0, 5.21089, 0, 0, 0, 10.9215, -0.493511, -1.62041, 26.4544)
@@ -5757,9 +5755,8 @@ transform = Transform3D(-1.08856e-07, -2.06374, 0, 2.49034, -9.02089e-08, 0, 0, 
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.557762, 42.019, -6.38267)
 target = NodePath("../moving_object_path3")
 
-[node name="button3" parent="." node_paths=PackedStringArray("target") instance=ExtResource("58_4vhpy")]
+[node name="button3" parent="." instance=ExtResource("58_4vhpy")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.90501, 42.019, -105.04)
-target = NodePath("")
 
 [node name="platform-fortified8" parent="." instance=ExtResource("100_dhlyc")]
 transform = Transform3D(1.08856e-07, 2.06374, 4.61581e-07, 2.49034, -9.02089e-08, -8.47033e-22, 1.64368e-14, 3.11616e-07, -3.05691, 0.182623, 42.7803, -5.16265)
