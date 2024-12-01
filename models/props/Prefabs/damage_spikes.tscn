@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://c7scobqvm5nba"]
+
+[ext_resource type="PackedScene" uid="uid://b5qs53andvf8c" path="res://models/props/trap-spikes-large.glb" id="1_yqnh3"]
+
+[node name="trap-spikes-large2" instance=ExtResource("1_yqnh3")]
