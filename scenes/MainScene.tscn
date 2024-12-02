@@ -6161,6 +6161,12 @@ transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -0.536
 [node name="dead_player" parent="." instance=ExtResource("147_355ea")]
 transform = Transform3D(-0.997053, 0.0767162, 0.000669494, 0, 0.00872656, -0.999962, -0.0767191, -0.997015, -0.00870084, 0.122634, -1.49435, -93.4201)
 
+[node name="dead_player3" parent="." instance=ExtResource("147_355ea")]
+transform = Transform3D(-0.931234, 0.0685338, 0.35792, -0.356256, 0.0355618, -0.933712, -0.0767191, -0.997015, -0.00870084, -4.08702, 18.0902, -96.8241)
+
+[node name="dead_player2" parent="." instance=ExtResource("147_355ea")]
+transform = Transform3D(-0.914607, 0.0738472, -0.397544, 0.396999, -0.0225413, -0.917542, -0.0767191, -0.997015, -0.00870084, 14.4247, 14.0865, -102.432)
+
 [node name="block-snow-edge4" parent="." instance=ExtResource("148_xkjaw")]
 transform = Transform3D(1.23284, 0, 0.881151, 0, 1.39674, 0, -0.957942, 0, 1.13401, 12.9056, 3.21224, -95.7917)
 
