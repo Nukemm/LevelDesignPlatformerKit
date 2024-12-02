@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://b06mpgw1ed61t"]
+
+[ext_resource type="PackedScene" uid="uid://b5qs53andvf8c" path="res://models/props/trap-spikes-large.glb" id="1_duo7i"]
+[ext_resource type="PackedScene" uid="uid://bunxb353h3lje" path="res://objects/damage_dealer_area_3d.tscn" id="2_ausfh"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_bras8"]
+size = Vector3(0.765198, 0.262421, 0.448547)
+
+[node name="trap-spikes-large2" instance=ExtResource("1_duo7i")]
+
+[node name="trap-spikes-large" parent="." index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.582126, 0, 0, 0)
+
+[node name="DamageDealerArea3D" parent="." index="2" instance=ExtResource("2_ausfh")]
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="DamageDealerArea3D" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00357056, 0.132584, -0.000518799)
+shape = SubResource("BoxShape3D_bras8")
