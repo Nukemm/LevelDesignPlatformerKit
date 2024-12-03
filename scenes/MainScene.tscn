@@ -186,7 +186,7 @@ environment = ExtResource("1_6hwq3")
 camera_attributes = SubResource("CameraAttributesPractical_u8ojw")
 
 [node name="Player" parent="." node_paths=PackedStringArray("view") instance=ExtResource("2_udw38")]
-transform = Transform3D(0.00774931, -0.00338593, -0.999964, 2.62388e-05, 0.999994, -0.00338583, 0.99997, 0, 0.00774935, -23.5611, 1.64481, 46.0072)
+transform = Transform3D(-0.0753444, 0.00337818, 0.997152, 2.62388e-05, 0.999994, -0.00338583, -0.997158, -0.000228939, -0.075344, -24.2248, 1.24183, 45.0095)
 view = NodePath("../View")
 
 [node name="View" type="Node3D" parent="." node_paths=PackedStringArray("target") groups=["View"]]
@@ -248,7 +248,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.2053, 21.0999, -96.2488)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.0391, 36.1308, -95.0844)
 
 [node name="checkpoint14" parent="World" instance=ExtResource("7_sc65f")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.80769, 25.89, -112.849)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.80769, 25.89, -113.402)
 
 [node name="checkpoint15" parent="World" instance=ExtResource("7_sc65f")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.04084, 19.4504, -94.8874)
@@ -296,7 +296,7 @@ transform = Transform3D(0.0163181, 0, 0.999867, 0, 1, 0, -0.999867, 0, 0.0163181
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.34, 19.3796, -103.324)
 
 [node name="coin11" parent="World" instance=ExtResource("9_kxsyy")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.34, 25.6349, -103.324)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.34, 24.6473, -103.324)
 
 [node name="coin9" parent="World" instance=ExtResource("9_kxsyy")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 14.34, 20.1234, -99.1843)
@@ -319,6 +319,15 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.70908, 0, -0.463851)
 [node name="block-grass-corner-overhang3" parent="World" instance=ExtResource("40_dw7me")]
 transform = Transform3D(0.0323876, 0, 2.46073, 0, 2.17085, 0, -0.999475, 0, 0.0797389, -5.99507, 24.34, -13.2817)
 
+[node name="block-grass-corner-overhang11" parent="World" instance=ExtResource("40_dw7me")]
+transform = Transform3D(-0.985097, 0, -0.423463, 0, 2.17085, 0, 0.171998, 0, -2.42533, -8.83081, 14.1603, -9.87939)
+
+[node name="block-grass-corner-overhang13" parent="World" instance=ExtResource("40_dw7me")]
+transform = Transform3D(-0.818731, 0, 1.41364, 0, 2.17085, 0, -0.574177, 0, -2.01573, -6.50556, 17.3919, 1.81088)
+
+[node name="block-grass-corner-overhang12" parent="World" instance=ExtResource("40_dw7me")]
+transform = Transform3D(0.997845, 0, 0.161538, 0, 3.59012, 0, -0.065612, 0, 2.45672, -8.83081, 16.4784, -4.99342)
+
 [node name="block-grass-corner-overhang9" parent="World" instance=ExtResource("40_dw7me")]
 transform = Transform3D(0.0323876, 0, 2.46073, 0, 2.17085, 0, -0.999475, 0, 0.0797389, 3.86926, 30.2833, -13.2817)
 
@@ -326,7 +335,7 @@ transform = Transform3D(0.0323876, 0, 2.46073, 0, 2.17085, 0, -0.999475, 0, 0.07
 transform = Transform3D(1, 0, 0, 0, 2.17085, 0, 0, 0, 2.46202, 7.24004, 18.1306, -1.03996)
 
 [node name="block-grass-corner-overhang10" parent="World" instance=ExtResource("40_dw7me")]
-transform = Transform3D(0.0295628, 0, -5.50414, 0, 4.58598, 0, 0.596349, 0, 0.272857, -0.837366, 22.0334, 2.40787)
+transform = Transform3D(0.0295628, 0, -5.50414, 0, 4.58598, 0, 0.596349, 0, 0.272857, -0.837366, 18.3232, 2.40787)
 
 [node name="block-grass-corner-overhang4" parent="World" instance=ExtResource("40_dw7me")]
 transform = Transform3D(0.186575, 0, -2.41879, 0, 2.17085, 0, 0.982441, 0, 0.459352, -3.12131, 4.76574, 2.55658)
@@ -335,10 +344,10 @@ transform = Transform3D(0.186575, 0, -2.41879, 0, 2.17085, 0, 0.982441, 0, 0.459
 transform = Transform3D(0.166051, 0, -1.10643, 0, 0.667709, 0, 0.874365, 0, 0.210122, 2.73201, 7.01609, 2.55658)
 
 [node name="block-grass-corner-overhang6" parent="World" instance=ExtResource("40_dw7me")]
-transform = Transform3D(1, 0, 0, 0, 2.17085, 0, 0, 0, 2.46202, 7.24004, 6.47233, -1.03996)
+transform = Transform3D(0.993107, 0, 0.288569, 0, 2.17085, 0, -0.117208, 0, 2.44505, 6.72203, 6.47233, -1.03996)
 
 [node name="block-grass-corner-overhang5" parent="World" instance=ExtResource("40_dw7me")]
-transform = Transform3D(2.63509, 0, 0, 0, 3.4213, 0, 0, 0, 3.78762, 7.24004, 6.98345, -6.4718)
+transform = Transform3D(-2.62913, 0, -0.254648, 0, 3.4213, 0, 0.177162, 0, -3.77905, 6.11617, 6.98345, -6.4718)
 
 [node name="barrel2" parent="World" instance=ExtResource("43_qpro6")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.263632, 1.54456, 77.3214)
@@ -577,7 +586,7 @@ transform = Transform3D(-6.06671e-08, 0, 1, 0, 3.30382, 0, -1.3879, 0, -4.37114e
 transform = Transform3D(-6.06671e-08, 0, 8.56429, 0, 3.30382, 0, -1.3879, 0, -3.74357e-07, -1.10865, 9.11481, 3.04909)
 
 [node name="block-grass-large-tall8" parent="." instance=ExtResource("61_ifi0b")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.43476, -1.99429, 0.829196)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.04273, -1.99429, 0.829196)
 
 [node name="block-grass-large-tall10" parent="." instance=ExtResource("61_ifi0b")]
 transform = Transform3D(-7.48087e-08, 0, 1, 0, 1, 0, -1.71142, 0, -4.37114e-08, 4.46501, -0.819707, -13.4489)
@@ -598,7 +607,7 @@ transform = Transform3D(-7.48087e-08, 0, 1, 0, 1, 0, -1.71142, 0, -4.37114e-08, 
 transform = Transform3D(-1.0685e-07, 0, 1, 0, 1, 0, -2.44444, 0, -4.37114e-08, 5.49287, 11.8765, -12.1951)
 
 [node name="block-grass-large-tall9" parent="." instance=ExtResource("61_ifi0b")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.51472, -1.99429, 0.74479)
+transform = Transform3D(1.26657, 0, 0, 0, 1, 0, 0, 0, 1, 6.97712, -1.99429, 0.74479)
 
 [node name="block-grass-overhang-large2" parent="." instance=ExtResource("62_cgc6e")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.44637, 13.0354, 8.14578)
@@ -671,6 +680,9 @@ transform = Transform3D(0.045764, 0, 0.998952, 0, 1, 0, -0.998952, 0, 0.045764, 
 
 [node name="flowers-tall4" parent="." instance=ExtResource("73_qr0ub")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.29363, 4.56692, 4.18913)
+
+[node name="flowers-tall13" parent="." instance=ExtResource("73_qr0ub")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.2119, 4.56692, -13.5621)
 
 [node name="flowers-tall11" parent="." instance=ExtResource("73_qr0ub")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.99393, 9.85751, -12.2652)
@@ -1221,6 +1233,18 @@ transform = Transform3D(0.939906, -0.087359, 0.330068, 0.339882, 0.331436, -0.88
 [node name="plant144" parent="." instance=ExtResource("81_cme1f")]
 transform = Transform3D(0.939906, -0.087359, 0.330068, 0.339882, 0.331436, -0.880131, -0.0325093, 0.939424, 0.34121, 7.00596, 2.20161, -95.5495)
 
+[node name="plant145" parent="." instance=ExtResource("81_cme1f")]
+transform = Transform3D(-0.0160316, 0.943238, 0.331727, -0.526564, 0.274071, -0.804745, -0.849984, -0.187577, 0.492282, 13.6507, 24.2713, -102.336)
+
+[node name="plant148" parent="." instance=ExtResource("81_cme1f")]
+transform = Transform3D(-0.0160316, 0.943238, 0.331727, -0.526564, 0.274071, -0.804745, -0.849984, -0.187577, 0.492282, 13.6507, 25.7687, -108.615)
+
+[node name="plant146" parent="." instance=ExtResource("81_cme1f")]
+transform = Transform3D(-0.0160316, 0.943238, 0.331727, -0.526564, 0.274071, -0.804745, -0.849984, -0.187577, 0.492282, 13.6462, 22.9485, -98.2529)
+
+[node name="plant147" parent="." instance=ExtResource("81_cme1f")]
+transform = Transform3D(-0.0160316, 0.943238, 0.331727, -0.526564, 0.274071, -0.804745, -0.849984, -0.187577, 0.492282, 13.6451, 23.708, -100.262)
+
 [node name="plant87" parent="." instance=ExtResource("81_cme1f")]
 transform = Transform3D(0.129843, 0.982603, -0.132788, 0.945117, -0.0821538, 0.316234, 0.299824, -0.166561, -0.939342, 6.9721, 32.6312, -1.85617)
 
@@ -1478,6 +1502,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.189, 0.979226, 14.0521)
 
 [node name="mushrooms4" parent="." instance=ExtResource("80_50c2j")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.23331, 0.979226, 43.5434)
+
+[node name="mushrooms5" parent="." instance=ExtResource("80_50c2j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.9786, 0.979226, 6.01167)
 
 [node name="fence-straight6" parent="." instance=ExtResource("93_250p4")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -6, 14, 8)
@@ -1903,7 +1930,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.2116, 1, 9.67265)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.8161, 1, 9.67265)
 
 [node name="tree43" parent="." instance=ExtResource("94_1t11c")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.3839, 1, 9.67265)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.3839, 1, 9.65965)
 
 [node name="tree44" parent="." instance=ExtResource("94_1t11c")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.0368, 1, 9.67265)
@@ -1945,7 +1972,7 @@ transform = Transform3D(0.18769, 0, -0.982228, 0, 1, 0, 0.982228, 0, 0.18769, 20
 transform = Transform3D(0.18769, 0, -0.982228, 0, 1, 0, 0.982228, 0, 0.18769, 19.4491, 1, 9.94251)
 
 [node name="tree119" parent="." instance=ExtResource("94_1t11c")]
-transform = Transform3D(0.18769, 0, -0.982228, 0, 1, 0, 0.982228, 0, 0.18769, 17.407, 1, 9.42237)
+transform = Transform3D(0.18769, 0, -0.982228, 0, 1, 0, 0.982228, 0, 0.18769, 17.407, 1, 9.85059)
 
 [node name="tree-pine-small77" parent="." instance=ExtResource("95_ycc00")]
 transform = Transform3D(1.2, 0, 0, 0, 1.2, 0, 0, 0, 1.2, -25.5768, 0.985041, 17.1478)
@@ -2901,9 +2928,6 @@ transform = Transform3D(-6.48535e-08, 0.300052, 1.46968, -9.64729e-09, 1.46968, 
 [node name="rocks4" parent="." instance=ExtResource("97_lp26e")]
 transform = Transform3D(3.62281, 0, 1.69566, 0, 4, 0, -1.69566, 0, 3.62281, 0.0999221, 0.915753, 44.5673)
 
-[node name="tree-pine4" parent="." instance=ExtResource("98_tguvw")]
-transform = Transform3D(1, 0, 0, 0, 1.39935, 0, 0, 0, 1, -24.3253, 0.985039, 38.7731)
-
 [node name="tree-pine5" parent="." instance=ExtResource("98_tguvw")]
 transform = Transform3D(1, 0, 0, 0, 1.39935, 0, 0, 0, 1, -23.5387, 0.985039, 38.7731)
 
@@ -3153,6 +3177,366 @@ transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0
 [node name="tree-pine1241" parent="." instance=ExtResource("98_tguvw")]
 transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, 14.4557, 0.985039, 50.5367)
 
+[node name="tree-pine1274" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, 16.5148, 0.985039, 10.134)
+
+[node name="tree-pine1275" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, 16.4987, 0.985039, 10.9205)
+
+[node name="tree-pine1276" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, 16.4818, 0.985039, 11.7478)
+
+[node name="tree-pine1277" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, 16.4642, 0.985039, 12.6092)
+
+[node name="tree-pine1278" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, 16.4472, 0.985039, 13.4367)
+
+[node name="tree-pine1279" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, 16.431, 0.985039, 14.2326)
+
+[node name="tree-pine1280" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, 16.4149, 0.985039, 15.019)
+
+[node name="tree-pine1281" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, 16.3988, 0.985039, 15.8054)
+
+[node name="tree-pine1282" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, 16.3819, 0.985039, 16.6328)
+
+[node name="tree-pine1283" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, 16.3656, 0.985039, 17.4263)
+
+[node name="tree-pine1284" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, 16.3487, 0.985039, 18.2537)
+
+[node name="tree-pine1289" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, 17.5168, 0.985039, 10.4499)
+
+[node name="tree-pine1290" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, 17.4998, 0.985039, 11.2772)
+
+[node name="tree-pine1291" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, 17.4822, 0.985039, 12.1386)
+
+[node name="tree-pine1292" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, 17.4653, 0.985039, 12.9661)
+
+[node name="tree-pine1293" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, 17.449, 0.985039, 13.762)
+
+[node name="tree-pine1294" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, 17.4329, 0.985039, 14.5484)
+
+[node name="tree-pine1295" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, 17.4168, 0.985039, 15.3348)
+
+[node name="tree-pine1296" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, 17.3999, 0.985039, 16.1622)
+
+[node name="tree-pine1297" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, 17.3837, 0.985039, 16.9557)
+
+[node name="tree-pine1298" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, 17.3667, 0.985039, 17.7832)
+
+[node name="tree-pine1285" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, 18.4584, 0.985039, 10.9205)
+
+[node name="tree-pine1286" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, 18.4415, 0.985039, 11.7478)
+
+[node name="tree-pine1287" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, 18.4239, 0.985039, 12.6092)
+
+[node name="tree-pine1288" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, 18.4069, 0.985039, 13.4367)
+
+[node name="tree-pine1299" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, 18.3907, 0.985039, 14.2326)
+
+[node name="tree-pine1300" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, 18.3746, 0.985039, 15.019)
+
+[node name="tree-pine1301" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, 18.3585, 0.985039, 15.8054)
+
+[node name="tree-pine1302" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, 18.3416, 0.985039, 16.6328)
+
+[node name="tree-pine1303" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, 18.3253, 0.985039, 17.4263)
+
+[node name="tree-pine1384" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, 18.3084, 0.985039, 18.2537)
+
+[node name="tree-pine1385" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, 19.4595, 0.985039, 11.2772)
+
+[node name="tree-pine1386" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, 19.4419, 0.985039, 12.1386)
+
+[node name="tree-pine1387" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, 19.425, 0.985039, 12.9661)
+
+[node name="tree-pine1388" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, 19.4087, 0.985039, 13.762)
+
+[node name="tree-pine1389" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, 19.3926, 0.985039, 14.5484)
+
+[node name="tree-pine1390" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, 19.3765, 0.985039, 15.3348)
+
+[node name="tree-pine1391" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, 19.3596, 0.985039, 16.1622)
+
+[node name="tree-pine1392" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, 19.3434, 0.985039, 16.9557)
+
+[node name="tree-pine1393" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, 19.3264, 0.985039, 17.7832)
+
+[node name="tree-pine1304" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, -17.3119, 0.985039, 10.9205)
+
+[node name="tree-pine1305" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, -17.3288, 0.985039, 11.7478)
+
+[node name="tree-pine1306" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, -17.3464, 0.985039, 12.6092)
+
+[node name="tree-pine1307" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, -17.3634, 0.985039, 13.4367)
+
+[node name="tree-pine1308" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, -17.3796, 0.985039, 14.2326)
+
+[node name="tree-pine1309" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, -17.3957, 0.985039, 15.019)
+
+[node name="tree-pine1310" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, -17.4118, 0.985039, 15.8054)
+
+[node name="tree-pine1311" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, -17.4287, 0.985039, 16.6328)
+
+[node name="tree-pine1312" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, -17.445, 0.985039, 17.4263)
+
+[node name="tree-pine1313" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, -17.0108, 0.985039, 18.2537)
+
+[node name="tree-pine1318" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, -16.2938, 0.985039, 10.4499)
+
+[node name="tree-pine1319" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, -16.3108, 0.985039, 11.2772)
+
+[node name="tree-pine1320" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, -16.3284, 0.985039, 12.1386)
+
+[node name="tree-pine1321" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, -16.3453, 0.985039, 12.9661)
+
+[node name="tree-pine1322" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, -16.3616, 0.985039, 13.762)
+
+[node name="tree-pine1323" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, -16.3777, 0.985039, 14.5484)
+
+[node name="tree-pine1324" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, -16.3938, 0.985039, 15.3348)
+
+[node name="tree-pine1325" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, -16.4107, 0.985039, 16.1622)
+
+[node name="tree-pine1326" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, -16.4269, 0.985039, 16.9557)
+
+[node name="tree-pine1327" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, -16.4439, 0.985039, 17.7832)
+
+[node name="tree-pine1314" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, -19.1989, 0.985039, 10.9205)
+
+[node name="tree-pine1315" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, -19.2158, 0.985039, 11.7478)
+
+[node name="tree-pine1316" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, -19.2334, 0.985039, 12.6092)
+
+[node name="tree-pine1317" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, -19.2504, 0.985039, 13.4367)
+
+[node name="tree-pine1328" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, -19.2666, 0.985039, 14.2326)
+
+[node name="tree-pine1329" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, -19.2827, 0.985039, 15.019)
+
+[node name="tree-pine1330" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, -19.2988, 0.985039, 15.8054)
+
+[node name="tree-pine1331" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, -19.3157, 0.985039, 16.6328)
+
+[node name="tree-pine1332" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, -19.332, 0.985039, 17.4263)
+
+[node name="tree-pine1333" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, -19.3489, 0.985039, 18.2537)
+
+[node name="tree-pine1334" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, -18.1808, 0.985039, 10.4499)
+
+[node name="tree-pine1335" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, -18.1978, 0.985039, 11.2772)
+
+[node name="tree-pine1336" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, -18.2154, 0.985039, 12.1386)
+
+[node name="tree-pine1337" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, -18.2323, 0.985039, 12.9661)
+
+[node name="tree-pine1338" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, -18.2486, 0.985039, 13.762)
+
+[node name="tree-pine1339" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, -18.2647, 0.985039, 14.5484)
+
+[node name="tree-pine1340" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, -18.2808, 0.985039, 15.3348)
+
+[node name="tree-pine1341" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, -18.2977, 0.985039, 16.1622)
+
+[node name="tree-pine1342" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, -18.3139, 0.985039, 16.9557)
+
+[node name="tree-pine1343" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, -18.3309, 0.985039, 17.7832)
+
+[node name="tree-pine1344" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, -21.1873, 0.985039, 10.9205)
+
+[node name="tree-pine1345" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, -21.2042, 0.985039, 11.7478)
+
+[node name="tree-pine1346" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, -21.2218, 0.985039, 12.6092)
+
+[node name="tree-pine1347" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, -21.2388, 0.985039, 13.4367)
+
+[node name="tree-pine1348" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, -21.255, 0.985039, 14.2326)
+
+[node name="tree-pine1349" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, -21.2711, 0.985039, 15.019)
+
+[node name="tree-pine1350" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, -21.2872, 0.985039, 15.8054)
+
+[node name="tree-pine1351" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, -21.3041, 0.985039, 16.6328)
+
+[node name="tree-pine1352" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, -21.3204, 0.985039, 17.4263)
+
+[node name="tree-pine1353" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, -21.3373, 0.985039, 18.2537)
+
+[node name="tree-pine1354" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, -20.1692, 0.985039, 10.4499)
+
+[node name="tree-pine1355" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, -20.1862, 0.985039, 11.2772)
+
+[node name="tree-pine1356" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, -20.2038, 0.985039, 12.1386)
+
+[node name="tree-pine1357" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, -20.2207, 0.985039, 12.9661)
+
+[node name="tree-pine1358" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, -20.237, 0.985039, 13.762)
+
+[node name="tree-pine1359" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, -20.2531, 0.985039, 14.5484)
+
+[node name="tree-pine1360" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, -20.2692, 0.985039, 15.3348)
+
+[node name="tree-pine1361" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, -20.2861, 0.985039, 16.1622)
+
+[node name="tree-pine1362" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, -20.3023, 0.985039, 16.9557)
+
+[node name="tree-pine1363" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, -20.3193, 0.985039, 17.7832)
+
+[node name="tree-pine1364" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, -23.1091, 0.985039, 10.9205)
+
+[node name="tree-pine1365" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, -23.126, 0.985039, 11.7478)
+
+[node name="tree-pine1366" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, -23.1436, 0.985039, 12.6092)
+
+[node name="tree-pine1367" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, -23.1606, 0.985039, 13.4367)
+
+[node name="tree-pine1368" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, -23.1768, 0.985039, 14.2326)
+
+[node name="tree-pine1369" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, -23.1929, 0.985039, 15.019)
+
+[node name="tree-pine1370" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, -23.209, 0.985039, 15.8054)
+
+[node name="tree-pine1371" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, -23.2259, 0.985039, 16.6328)
+
+[node name="tree-pine1372" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, -23.2422, 0.985039, 17.4263)
+
+[node name="tree-pine1373" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, -23.2591, 0.985039, 18.2537)
+
+[node name="tree-pine1374" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, -22.091, 0.985039, 10.4499)
+
+[node name="tree-pine1375" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, -22.108, 0.985039, 11.2772)
+
+[node name="tree-pine1376" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, -22.1256, 0.985039, 12.1386)
+
+[node name="tree-pine1377" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, -22.1425, 0.985039, 12.9661)
+
+[node name="tree-pine1378" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, -22.1588, 0.985039, 13.762)
+
+[node name="tree-pine1379" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, -22.1749, 0.985039, 14.5484)
+
+[node name="tree-pine1380" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, -22.191, 0.985039, 15.3348)
+
+[node name="tree-pine1381" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, -22.2079, 0.985039, 16.1622)
+
+[node name="tree-pine1382" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, -22.2241, 0.985039, 16.9557)
+
+[node name="tree-pine1383" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, -22.2411, 0.985039, 17.7832)
+
 [node name="tree-pine1226" parent="." instance=ExtResource("98_tguvw")]
 transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0.0204539, 15.6362, 0.985039, 39.6915)
 
@@ -3242,6 +3626,12 @@ transform = Transform3D(-0.0204539, 0, -0.999791, 0, 1.39935, 0, 0.999791, 0, -0
 
 [node name="tree-pine62" parent="." instance=ExtResource("98_tguvw")]
 transform = Transform3D(1, 0, 0, 0, 1.39935, 0, 0, 0, 1, -23.7988, 0.985039, 37.7203)
+
+[node name="tree-pine1159" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(1.02056, 0, 0, 0, 1.51824, 0, 0, 0, 1, -24.6307, 0.985039, 37.7203)
+
+[node name="tree-pine1162" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(1.02056, 0, 0, 0, 1.51824, 0, 0, 0, 1, -24.3429, 0.985039, 38.3455)
 
 [node name="tree-pine63" parent="." instance=ExtResource("98_tguvw")]
 transform = Transform3D(1, 0, 0, 0, 1.39935, 0, 0, 0, 1, -23.0122, 0.985039, 37.7203)
@@ -6184,19 +6574,22 @@ transform = Transform3D(1, 0, 0, 0, 1.20717, 0, 0, 0, 1, 0.120663, 13.8961, 11.0
 transform = Transform3D(1, 0, 0, 0, 1.39935, 0, 0, 0, 1, 1.70326, 13.8961, 11.0656)
 
 [node name="tree-pine1198" parent="." instance=ExtResource("98_tguvw")]
-transform = Transform3D(1, 0, 0, 0, 1.39935, 0, 0, 0, 1, 9.14906, 4.58896, 3.53975)
+transform = Transform3D(1, 0, 0, 0, 1.39935, 0, 0, 0, 1, 9.75703, 4.58896, 3.53975)
+
+[node name="tree-pine1270" parent="." instance=ExtResource("98_tguvw")]
+transform = Transform3D(1, 0, 0, 0, 1.39935, 0, 0, 0, 1, 6.77734, 4.58896, 1.5651)
 
 [node name="tree-pine1207" parent="." instance=ExtResource("98_tguvw")]
-transform = Transform3D(1, 0, 0, 0, 1.2047, 0, 0, 0, 1, 9.14906, 4.58896, 2.6233)
+transform = Transform3D(1, 0, 0, 0, 1.2047, 0, 0, 0, 1, 9.75703, 4.58896, 2.6233)
 
 [node name="tree-pine1208" parent="." instance=ExtResource("98_tguvw")]
-transform = Transform3D(1, 0, 0, 0, 1.39935, 0, 0, 0, 1, 9.14906, 4.58896, 1.75424)
+transform = Transform3D(1, 0, 0, 0, 1.39935, 0, 0, 0, 1, 9.75703, 4.58896, 1.75424)
 
 [node name="tree-pine1209" parent="." instance=ExtResource("98_tguvw")]
-transform = Transform3D(0.824106, 0.792641, 0, -0.566435, 1.15321, 0, 0, 0, 1, 9.14906, 4.47911, 0.904719)
+transform = Transform3D(0.824106, 0.792641, 0, -0.566435, 1.15321, 0, 0, 0, 1, 9.75703, 4.47911, 0.904719)
 
 [node name="tree-pine1210" parent="." instance=ExtResource("98_tguvw")]
-transform = Transform3D(1, 0, 0, 0, 1.16159, 0, 0, 0, 1, 9.14906, 4.58896, 0.0491407)
+transform = Transform3D(1, 0, 0, 0, 1.16159, 0, 0, 0, 1, 9.75703, 4.58896, 0.0491407)
 
 [node name="tree-pine1206" parent="." instance=ExtResource("98_tguvw")]
 transform = Transform3D(1, 0, 0, 0, 1.22303, 0.485924, 0, -0.679977, 0.874001, 7.99072, 27.3543, -14.4394)
@@ -7213,6 +7606,12 @@ transform = Transform3D(0.435476, -0.269021, 0, 0.143278, 0.817656, 0, 0, 0, 1, 
 [node name="rocks6" parent="." instance=ExtResource("160_8534c")]
 transform = Transform3D(1, 0, 0, 0, 1.5251, 0, 0, 0, 1.45768, 3.31439, 14.0245, 4.76783)
 
+[node name="rocks8" parent="." instance=ExtResource("160_8534c")]
+transform = Transform3D(1, 0, 0, 0, 1.5251, 0, 0, 0, 1.45768, 9.64855, 0.930699, 5.09143)
+
+[node name="rocks9" parent="." instance=ExtResource("160_8534c")]
+transform = Transform3D(1.63787, 0, 0, 0, 2.4559, 0, 0, 0, 1.45768, 10.1095, 0.922099, 4.75386)
+
 [node name="rocks7" parent="." instance=ExtResource("160_8534c")]
 transform = Transform3D(1, 0, 0, 0, 1.5251, 0, 0, 0, 1.45768, -6.33324, 14.0245, 5.89278)
 
@@ -7244,7 +7643,10 @@ transform = Transform3D(2.72742, 0, 0, 0, 5.50653, 0, 0, 0, 3.77256, 9.93018, -6
 transform = Transform3D(-1, -1.86884e-08, -1.49261e-07, -4.10331e-08, 0.988512, 0.15114, 1.44722e-07, 0.15114, -0.988512, 8.61436, 24.0414, -97.2386)
 
 [node name="block-snow-overhang-edge37" parent="." instance=ExtResource("158_boajm")]
-transform = Transform3D(-1.3209, -1.86884e-08, -1.49261e-07, -2.63947e-08, 0.999962, 0.00867419, 1.96937e-07, 0.00867419, -0.999962, 7.13807, -6.41822, -98.1434)
+transform = Transform3D(-1.3209, -1.86884e-08, -1.49261e-07, -2.63947e-08, 0.999962, 0.00867419, 1.96937e-07, 0.00867419, -0.999962, 5.55465, -6.89261, -97.9742)
+
+[node name="block-snow-overhang-edge38" parent="." instance=ExtResource("158_boajm")]
+transform = Transform3D(-1.3209, -1.86884e-08, -1.49261e-07, -2.63947e-08, 0.999962, 0.00867419, 1.96937e-07, 0.00867419, -0.999962, 7.13807, -6.41822, -97.9742)
 
 [node name="tree-pine-snow6" parent="." instance=ExtResource("159_l6k85")]
 transform = Transform3D(1.17401, -0.52772, 0, 0.520814, 1.18958, 0, 0, 0, 1, -4.2537, -1.57398, -89.3273)
