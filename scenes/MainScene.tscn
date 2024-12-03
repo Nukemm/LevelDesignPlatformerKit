@@ -7610,7 +7610,7 @@ transform = Transform3D(1, 0, 0, 0, 1.5251, 0, 0, 0, 1.45768, 3.31439, 14.0245, 
 transform = Transform3D(1, 0, 0, 0, 1.5251, 0, 0, 0, 1.45768, 9.64855, 0.930699, 5.09143)
 
 [node name="rocks9" parent="." instance=ExtResource("160_8534c")]
-transform = Transform3D(1.63787, 0, 0, 0, 2.4559, 0, 0, 0, 1.45768, 10.1095, 0.922099, 4.75386)
+transform = Transform3D(1.63787, 0, 0, 0, 2.4559, 0, 0, 0, 1.45768, 10.1095, 0.922099, 4.57673)
 
 [node name="rocks7" parent="." instance=ExtResource("160_8534c")]
 transform = Transform3D(1, 0, 0, 0, 1.5251, 0, 0, 0, 1.45768, -6.33324, 14.0245, 5.89278)
