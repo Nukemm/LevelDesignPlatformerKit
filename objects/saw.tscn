@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://bunxb353h3lje" path="res://objects/damage_dealer_area_3d.tscn" id="2_w12bb"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_juh84"]
-size = Vector3(1, 1, 0.6)
+size = Vector3(0.780937, 0.802698, 0.279321)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_gjnwj"]
 size = Vector3(0.75, 0.75, 0.35)
@@ -14,6 +14,7 @@ size = Vector3(0.75, 0.75, 0.35)
 [node name="DamageDealerArea3D" parent="." index="1" instance=ExtResource("2_w12bb")]
 
 [node name="CollisionShape3D" parent="DamageDealerArea3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00755346, 0.00193694, -0.0108032)
 shape = SubResource("BoxShape3D_juh84")
 
 [node name="AnimatableBody3D" type="AnimatableBody3D" parent="." index="2"]
